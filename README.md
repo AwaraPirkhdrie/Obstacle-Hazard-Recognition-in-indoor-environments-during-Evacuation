@@ -257,7 +257,7 @@ This study highlights the potential of computer vision—particularly YOLO-based
 - **False positives/negatives** during hazard detection can have severe consequences. A false "clear path" detection might endanger evacuees, while a false "blocked" warning could create unnecessary panic or inefficiency.
 - **Human-centric design** is essential. Systems should not just detect hazards, but also consider human behavior—e.g., crowd density, people falling, or individuals with mobility limitations. This points toward integration with behavior datasets (such as HBDset) and multi-sensor input.
 
-### 🛠 Lessons Learned
+### Lessons Learned
 
 - Building real-time safety-critical systems requires balancing accuracy, speed, interpretability, and system complexity.
 - Collaboration between software engineers, fire safety experts, and building designers is necessary to define appropriate alarm thresholds, exit path logic, and acceptable risk margins.
@@ -273,7 +273,6 @@ Overall, this project offers a flexible and extensible framework that lays the f
 - Integrate gas/toxic fume sensors to detect invisible hazards
 - Use stereo or depth cameras for more accurate 3D mapping
 - Implement anomaly detection to compare live vs. baseline video feeds
-- Incorporate human behavior models (e.g., fallen individuals)
 
 ---
 
