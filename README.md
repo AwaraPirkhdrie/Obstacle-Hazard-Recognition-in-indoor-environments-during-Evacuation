@@ -12,6 +12,8 @@ This work is based on a study conducted at Malmö University by Awara Pirkhdrie,
 
 - **Awara Pirkhdrie** – Department of Computer Science, Malmö University  
   [🔗 LinkedIn Profile](https://www.linkedin.com/in/awara-pirkhdrie/)
+ 
+Date: 2024-12-24
 ## Abstract
 
 Evacuation planning and real-time hazard recognition are critical for public safety in large buildings. Traditional methods such as static fire alarms or smoke sensors often fail to distinguish between partial and complete obstructions and cannot interpret visual cues. This project proposes a vision-based solution using deep learning, especially YOLOv8 and YOLOv11s models, to detect hazards like fire and smoke, as well as obstacles like tables and chairs that may block exit routes. 
