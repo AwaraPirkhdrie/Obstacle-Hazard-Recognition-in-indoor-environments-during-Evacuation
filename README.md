@@ -277,10 +277,10 @@ Overall, this project offers a flexible and extensible framework that lays the f
 
 ## Citation
 
-If you use or refer to this project in academic or industrial work, please cite:
-
 ```text
 Pirkhdrie, A. (2025). Obstacle / Hazard Recognition in Indoor Environments During Evacuation. Malmö University.
+
+Thank you Hamed Talibi, for your time and insightful contributions to the project. It has been a pleasure working with you
 ```
 
 
