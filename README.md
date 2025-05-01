@@ -251,53 +251,55 @@ If you use or refer to this project in academic or industrial work, please cite:
 Pirkhdrie, A. (2025). Obstacle / Hazard Recognition in Indoor Environments During Evacuation. Malmö University.
 ```
 
+
 ## References
 
-- Redmon, J., Divvala, S., Girshick, R., & Farhadi, A. (2016). *You Only Look Once: Unified, Real-Time Object Detection*. In CVPR. [DOI: 10.1109/CVPR.2016.91](https://doi.org/10.1109/CVPR.2016.91)
+1. Redmon, J., Divvala, S., Girshick, R., & Farhadi, A. (2016). *You Only Look Once: Unified, Real-Time Object Detection*. In CVPR. [DOI: 10.1109/CVPR.2016.91](https://doi.org/10.1109/CVPR.2016.91)
 
-- Hevner, A. R. (2007). *A three cycle view of design science research*. Scandinavian Journal of Information Systems, 19(2), 4.
+2. Hevner, A. R. (2007). *A three cycle view of design science research*. Scandinavian Journal of Information Systems, 19(2), 4.
 
-- Xiong, Q., Zhu, Q., Du, Z., et al. (2017). *A Dynamic Indoor Field Model for Emergency Evacuation Simulation*. ISPRS Int. J. Geo-Inf., 6(4), 104.
+3. Xiong, Q., Zhu, Q., Du, Z., et al. (2017). *A Dynamic Indoor Field Model for Emergency Evacuation Simulation*. ISPRS Int. J. Geo-Inf., 6(4), 104.
 
-- Karampotsis, E., Kioskli, K., Tsirimpa, A., et al. (2024). *Understanding evacuation behavior for effective disaster preparedness: a hybrid machine learning approach*. Natural Hazards, 1–39.
+4. Karampotsis, E., Kioskli, K., Tsirimpa, A., et al. (2024). *Understanding evacuation behavior for effective disaster preparedness: a hybrid machine learning approach*. Natural Hazards, 1–39.
 
-- Khare, O., Gandhi, S., Rahalkar, A., & Mane, S. (2023). *YOLOv8-Based Visual Detection of Road Hazards: Potholes, Sewer Covers, and Manholes*. In IEEE PuneCon, 1–6.
+5. Khare, O., Gandhi, S., Rahalkar, A., & Mane, S. (2023). *YOLOv8-Based Visual Detection of Road Hazards: Potholes, Sewer Covers, and Manholes*. In IEEE PuneCon, 1–6.
 
-- Yoo, S. J., & Choi, S. H. (2022). *Indoor AR navigation and emergency evacuation system based on ML and IoT*. IEEE IoT Journal, 9(21), 20853–20868.
+6. Yoo, S. J., & Choi, S. H. (2022). *Indoor AR navigation and emergency evacuation system based on ML and IoT*. IEEE IoT Journal, 9(21), 20853–20868.
 
-- Alqahtani, A., Alsubai, S., & Bhatia, M. (2024). *Applied AI framework for smart evacuation in industrial disasters*. Applied Intelligence, 1–16.
+7. Alqahtani, A., Alsubai, S., & Bhatia, M. (2024). *Applied AI framework for smart evacuation in industrial disasters*. Applied Intelligence, 1–16.
 
-- Pérez-García, F., Sparks, R., & Ourselin, S. (2021). *TorchIO: efficient preprocessing of medical images*. Comput. Methods Programs Biomed., 208, 106236.
+8. Pérez-García, F., Sparks, R., & Ourselin, S. (2021). *TorchIO: efficient preprocessing of medical images*. Comput. Methods Programs Biomed., 208, 106236.
 
-- Liang, J., & Cheng, J. (2024). *Mirror Target YOLO: Indirect Vision for Fire Detection in Heritage Buildings*. arXiv:2411.13997.
+9. Liang, J., & Cheng, J. (2024). *Mirror Target YOLO: Indirect Vision for Fire Detection in Heritage Buildings*. arXiv:2411.13997.
 
-- Vu, V., Tran-Anh, D., & Tran, C. (2024). *Forest Fire Smoke Detection Using Video-Based Multiple Object Kinetic Emission Detection*. SSRN. [URL](https://ssrn.com/abstract=5005161)
+10. Vu, V., Tran-Anh, D., & Tran, C. (2024). *Forest Fire Smoke Detection Using Video-Based Multiple Object Kinetic Emission Detection*. SSRN. [URL](https://ssrn.com/abstract=5005161)
 
-- Qian, J., Hong, C., Zhang, K., et al. (2024). *High Quality Fire Smoke Dataset: A Benchmark for Fire and Smoke Detection*. ACM. [DOI: 10.1145/3688867.3690170](https://doi.org/10.1145/3688867.3690170)
+11. Qian, J., Hong, C., Zhang, K., et al. (2024). *High Quality Fire Smoke Dataset: A Benchmark for Fire and Smoke Detection*. ACM. [DOI: 10.1145/3688867.3690170](https://doi.org/10.1145/3688867.3690170)
 
-- Yang, M., Qian, S., & Wu, X. (2024). *Real-time fire and smoke detection with transfer learning*. IET Image Processing, 18, 3716–3728. [DOI: 10.1049/ipr2.13187](https://doi.org/10.1049/ipr2.13187)
+12. Yang, M., Qian, S., & Wu, X. (2024). *Real-time fire and smoke detection with transfer learning*. IET Image Processing, 18, 3716–3728. [DOI: 10.1049/ipr2.13187](https://doi.org/10.1049/ipr2.13187)
 
-- Lee, H. G., Pham, T. N., Nguyen, V. H., et al. (2024). *Fire Cause Classification Using CNN-Based Models*. IEEE Access, 12, 135104–135113. [DOI: 10.1109/ACCESS.2024.3461319](https://doi.org/10.1109/ACCESS.2024.3461319)
+13. Lee, H. G., Pham, T. N., Nguyen, V. H., et al. (2024). *Fire Cause Classification Using CNN-Based Models*. IEEE Access, 12, 135104–135113. [DOI: 10.1109/ACCESS.2024.3461319](https://doi.org/10.1109/ACCESS.2024.3461319)
 
-- Deng, H., Ou, Z., Zhang, G., et al. (2021). *BIM and Computer Vision-based Fire Evacuation Framework*. Sensors, 21(11), 3851.
+14. Deng, H., Ou, Z., Zhang, G., et al. (2021). *BIM and Computer Vision-based Fire Evacuation Framework*. Sensors, 21(11), 3851.
 
-- Ding, Y., Chen, X., Wang, Z., et al. (2024). *Human Behaviour Detection Dataset (HBDset) for Evacuation Safety*. Journal of Safety Science and Resilience, 5, 355–364. [DOI: 10.1016/j.jnlssr.2024.04.002](https://doi.org/10.1016/j.jnlssr.2024.04.002)
+15. Ding, Y., Chen, X., Wang, Z., et al. (2024). *Human Behaviour Detection Dataset (HBDset) for Evacuation Safety*. Journal of Safety Science and Resilience, 5, 355–364. [DOI: 10.1016/j.jnlssr.2024.04.002](https://doi.org/10.1016/j.jnlssr.2024.04.002)
 
-- Jiang, X., Zhang, P., Yu, A., et al. (2024). *Emergency Evacuation via Long-Range Communication*. Journal of Industrial Info. Integration, 39, 100601. [DOI: 10.1016/j.jii.2024.100601](https://doi.org/10.1016/j.jii.2024.100601)
+16. Jiang, X., Zhang, P., Yu, A., et al. (2024). *Emergency Evacuation via Long-Range Communication*. Journal of Industrial Info. Integration, 39, 100601. [DOI: 10.1016/j.jii.2024.100601](https://doi.org/10.1016/j.jii.2024.100601)
 
-- Yen, H. H., & Lin, C. H. (2024). *IoT-Enabled Multi-Floor Evacuation Signage*. Sensors, 24, 1115. [DOI: 10.3390/s24041115](https://doi.org/10.3390/s24041115)
+17. Yen, H. H., & Lin, C. H. (2024). *IoT-Enabled Multi-Floor Evacuation Signage*. Sensors, 24, 1115. [DOI: 10.3390/s24041115](https://doi.org/10.3390/s24041115)
 
-- Le, T. V., Tran, H. T., & Bouzefrane, S. (2024). *Trusted Fog-Based Evacuation System*. Journal of Information and Telecommunication, 8(4), 417–451. [DOI: 10.1080/24751839.2024.2306787](https://doi.org/10.1080/24751839.2024.2306787)
+18. Le, T. V., Tran, H. T., & Bouzefrane, S. (2024). *Trusted Fog-Based Evacuation System*. Journal of Information and Telecommunication, 8(4), 417–451. [DOI: 10.1080/24751839.2024.2306787](https://doi.org/10.1080/24751839.2024.2306787)
 
-- Terven, J., Córdova-Esparza, D. M., & Romero-González, J. A. (2023). *A Review of YOLO Architectures: From v1 to YOLO-NAS*. Machine Learning & Knowledge Extraction, 5(4), 1680–1716.
+19. Terven, J., Córdova-Esparza, D. M., & Romero-González, J. A. (2023). *A Review of YOLO Architectures: From v1 to YOLO-NAS*. Machine Learning & Knowledge Extraction, 5(4), 1680–1716.
 
-- Egashira, T., Nishikawa, H., Kong, X., & Tomiyama, H. (2021). *Raspberry Pi Security Camera with Container-based Allocation*. ICEIC.
+20. Egashira, T., Nishikawa, H., Kong, X., & Tomiyama, H. (2021). *Raspberry Pi Security Camera with Container-based Allocation*. ICEIC.
 
-- Xu, S. S., & Shue, S. (2024). *YOLO Object Detection Performance on Edge Devices*. ISNCC. [DOI: 10.1109/ISNCC62547.2024.10759057](https://doi.org/10.1109/ISNCC62547.2024.10759057)
+21. Xu, S. S., & Shue, S. (2024). *YOLO Object Detection Performance on Edge Devices*. ISNCC. [DOI: 10.1109/ISNCC62547.2024.10759057](https://doi.org/10.1109/ISNCC62547.2024.10759057)
 
-- Megalingam, R. K., et al. (2016). *Monocular Distance Estimation Using Pinhole Model*. ISCO. [DOI: 10.1109/ISCO.2016.7727017](https://doi.org/10.1109/ISCO.2016.7727017)
+22. Megalingam, R. K., et al. (2016). *Monocular Distance Estimation Using Pinhole Model*. ISCO. [DOI: 10.1109/ISCO.2016.7727017](https://doi.org/10.1109/ISCO.2016.7727017)
 
-- Sadreddini, Z., Çavdar, T., & Jond, H. B. (2016). *Single Camera Distance Estimation for Indoor Environments*. TSP. [DOI: 10.1109/TSP.2016.7760921](https://doi.org/10.1109/TSP.2016.7760921)
+23. Sadreddini, Z., Çavdar, T., & Jond, H. B. (2016). *Single Camera Distance Estimation for Indoor Environments*. TSP. [DOI: 10.1109/TSP.2016.7760921](https://doi.org/10.1109/TSP.2016.7760921)
 
-- Saputra, D. E., et al. (2021). *Experiment on Distance Measurement Using Single Camera*. ICOIACT. [DOI: 10.1109/ICOIACT53268.2021.9564010](https://doi.org/10.1109/ICOIACT53268.2021.9564010)
+24. Saputra, D. E., et al. (2021). *Experiment on Distance Measurement Using Single Camera*. ICOIACT. [DOI: 10.1109/ICOIACT53268.2021.9564010](https://doi.org/10.1109/ICOIACT53268.2021.9564010)
+
 
