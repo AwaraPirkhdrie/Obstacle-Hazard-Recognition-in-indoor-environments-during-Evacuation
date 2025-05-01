@@ -20,6 +20,38 @@ Using labeled datasets, trained models, and real-world videos, this system measu
 
 ---
 
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Authors](#authors)
+- [Abstract](#abstract)
+- [Motivation](#motivation)
+- [Research Questions](#research-questions)
+- [Methodology](#methodology)
+  - [Model Creation Process](#model-creation-process)
+  - [Dataset Preparation](#dataset-preparation)
+- [YOLOv8 Architecture](#yolov8-architecture)
+- [Training and Evaluation](#training-and-evaluation)
+- [Validation Results](#validation-results)
+- [Door Obstruction by Fire and Smoke](#door-obstruction-by-fire-and-smoke)
+- [Object Distance and Size Estimation](#object-distance-and-size-estimation)
+  - [Technical Methodology](#technical-methodology)
+  - [Practical Implementation](#practical-implementation)
+  - [Limitations and Observations](#limitations-and-observations)
+  - [Future Improvements](#future-improvements)
+- [Results Summary](#results-summary)
+- [Discussion](#discussion)
+  - [Strengths and Contributions](#strengths-and-contributions)
+  - [Limitations and Technical Challenges](#limitations-and-technical-challenges)
+  - [Ethical and Practical Considerations](#ethical-and-practical-considerations)
+  - [Lessons Learned](#lessons-learned)
+- [Future Work](#future-work)
+- [Citation](#citation)
+- [References](#references)
+
+---
+
 ## Motivation
 
 - **Limitations of traditional systems**: Smoke sensors can trigger even if an exit is still usable, and cannot visually confirm obstructions.
