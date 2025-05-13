@@ -4,7 +4,7 @@
 
 This project investigates how computer vision, specifically the YOLO object detection algorithm, can be used to recognize obstacles and hazards (such as fire, smoke, furniture, or people) in indoor environments during emergency evacuations. By enabling real-time detection through a camera system, the approach aims to enhance building safety and inform evacuation decision-making more intelligently than traditional sensor-based systems.
 
-This work is based on a study conducted at Malmö University by Awara Pirkhdrie, under the supervision of Dr. Arezoo Sarkheyli-Hägele.
+This work is based on a study conducted at Malmö University by Awara Pirkhdrie, Department of Computer Science, Malmö University .
 
 ---
 
