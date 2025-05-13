@@ -204,14 +204,9 @@ Overall, this project offers a flexible and extensible framework that lays the f
 
 ```text
 Pirkhdrie, A. (2025). Obstacle / Hazard Recognition in Indoor Environments During Evacuation. Malmö University.
-
-https://www.linkedin.com/posts/awara-pirkhdrie_trained-a-yolo-based-ai-model-for-50-epochs-activity-7266927529398026240-3nfk?utm_source=social_share_video_v2&utm_medium=android_app&rcm=ACoAADhWKPUBqaQPwBdijRsPWw2O4fGsVoO2juI&utm_campaign=copy_link
-
+https://www.linkedin.com/in/awara-pirkhdrie/
 
 
-
-Thank you Hamed Talibi, for your time and insightful contributions to the project. It has been a pleasure working with you
-```
 
 
 ## References
