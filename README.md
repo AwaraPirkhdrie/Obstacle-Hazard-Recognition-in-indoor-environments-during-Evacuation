@@ -18,7 +18,7 @@ Date: 2025-01-09
 
 Evacuation planning and real-time hazard recognition are critical for public safety in large buildings. Traditional methods such as static fire alarms or smoke sensors often fail to distinguish between partial and complete obstructions and cannot interpret visual cues. This project proposes a vision-based solution using deep learning, especially YOLOv8 and YOLOv11s models, to detect hazards like fire and smoke, as well as obstacles like tables and chairs that may block exit routes. 
 
-Using labeled datasets, trained models, and real-world videos, this system measures not only the presence of hazards but also the size and distance of obstacles, helping emergency systems decide whether an evacuation route is viable.
+Using labeled datasets, trained models, and real-world videos, this system measures not only the presence of hazards but also the size of obstacles, helping emergency systems decide whether an evacuation route is viable.
 
 ---
 
@@ -37,7 +37,6 @@ Using labeled datasets, trained models, and real-world videos, this system measu
 - [Training and Evaluation](#training-and-evaluation)
 - [Validation Results](#validation-results)
 - [Door Obstruction by Fire and Smoke](#door-obstruction-by-fire-and-smoke)
-- [Object Distance and Size Estimation](#object-distance-and-size-estimation)
   - [Technical Methodology](#technical-methodology)
   - [Practical Implementation](#practical-implementation)
   - [Limitations and Observations](#limitations-and-observations)
@@ -125,78 +124,13 @@ This technique simulates real-world conditions where visual inspection would be 
 
 ---
 
-## Object Distance and Size Estimation
-
-To determine whether an object is obstructing a passage during evacuation, we implemented a **monocular vision-based estimation technique** using the **pinhole camera model**. This method is especially suitable for resource-constrained environments where depth sensors or stereo cameras are impractical, such as edge IoT devices.
-
-The approach allows for approximation of an object’s:
-- **Real-world width** (e.g., of a chair or table)
-- **Distance from the exit door**
-
-This is particularly relevant for answering Research Question 2:  
-> *How effectively can a computer vision-based system detect and classify physical obstructions blocking an exit during building evacuations?*
-
-### Technical Methodology
-
-Using a single RGB camera, we measure:
-
-1. The pixel width of a **reference object** (typically a door, whose real-world width is known, e.g., 92 cm).
-2. The pixel width or distance (in pixels) to the **target object** (chair or table).
-3. The camera’s **focal length** in pixels, calibrated manually.
-4. Using geometric projection, we convert pixel measurements into metric estimates.
-
-#### Key Equations:
-- **Real Width of Object**:  
-  \( W_{\text{real}} = \frac{W_d \times W_p}{f} \)
-
-- **Pixel Distance Between Two Objects** (e.g., chair to door):  
-  \( d_{\text{pixel}} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \)
-
-- **Real Distance**:  
-  \( d_{\text{real}} = d_{\text{pixel}} \times \frac{W_d}{W_p} \)
-
-Where:
-- \( W_d \) = real-world width of the reference object (door)
-- \( W_p \) = pixel width in image
-- \( f \) = focal length in pixels (camera-dependent)
-
----
-
-### Practical Implementation
-
-- We placed a chair and a table at three distances: **150 cm, 100 cm, and 50 cm** from a known door.
-- The model estimated:
-  - **Chair distances**: ~114 cm, 111 cm, and 84 cm
-  - **Table distances**: ~127 cm, 113 cm, and 103 cm
-- **Width estimation**:
-  - Real table width: 180 cm → estimated: 150–185 cm
-  - Real chair width: 57 cm → estimated: 50–65 cm
-
-The overall **accuracy margin** was within **±50 cm**, sufficient for deciding whether an object is close enough to hinder evacuation.
-
----
-
-### Limitations and Observations
-
-- The estimation fluctuated depending on camera zoom, angle, and lighting conditions.
-- The method assumes a **fixed camera position and orientation**, which may not hold during real emergencies.
-- Focal length calibration was **manual**; incorrect values significantly degraded estimation accuracy.
-- The system cannot evaluate **object depth** (e.g., if the chair is tall or stackable), nor can it estimate **object mass**, which affects whether it is an immovable obstruction.
-
----
-
 ### Future Improvements
 
 - Incorporating dual cameras or stereo vision for depth accuracy.
 - Using infrared markers or ArUco tags for automated scale calibration.
-- Integrating LiDAR or ultrasonic sensors to measure distance and depth more precisely.
 - Real-time adjustment of the focal index using metadata from camera hardware.
 
 ---
-
-![Figure 8: Measure Object Size and Distance](images/5.png)
-
-These findings confirm that monocular estimation using the pinhole model is a viable approach for identifying potential obstructions under constrained conditions. While not perfectly precise, the model can support early-warning systems and emergency responders with valuable spatial awareness during evacuations.
 
 
 ## Results Summary
@@ -208,17 +142,9 @@ The experimental evaluation focused on two major prototype models developed usin
 | Door Detection                      | High accuracy (≈ 98%)         |
 | Fire Detection                      | Strong performance (≈ 84%)    |
 | Smoke Detection                     | Moderate performance (≈ 68%)  |
-| Object Size Estimation (Chair/Table)| ±10–30 cm range                  |
-| Object Distance Estimation         | ±50 cm range                     |
-| Frame Inference Speed              | Real-time (< 0.3 sec/frame)      |
-
 ### Hazard Recognition
 - **Doors engulfed in fire or smoke** were successfully identified with lower confidence scores, and in extreme cases, were correctly no longer classified as usable exits.
 - **Smoke detection** accuracy varied depending on image quality, lighting, and transparency of the smoke. Improvement is expected with dataset balancing.
-
-### Obstruction Identification
-- The system accurately detected furniture (e.g., chairs, tables) in front of exits and estimated their width and distance using monocular vision with the pinhole camera model.
-- Distances from objects to exits were estimated within an acceptable ±50 cm range—sufficient to inform emergency decision-making.
 
 ### Evaluation Insight
 - Models showed strong generalization when tested on previously unseen videos.
@@ -226,7 +152,6 @@ The experimental evaluation focused on two major prototype models developed usin
 
 ### Limitations Observed
 - **Smoke detection** was limited by fewer samples in the validation set, suggesting the need for dataset expansion.
-- **Camera calibration** (focal length) had to be adjusted manually for accurate distance estimation.
 - Visual-only models cannot estimate object weight (to assess movability), requiring future sensor integration.
 
 These results demonstrate the potential of vision-based systems for supporting dynamic evacuation decisions in real-time, with significant advantages over static sensors or pre-programmed routes.
@@ -236,19 +161,18 @@ These results demonstrate the potential of vision-based systems for supporting d
 
 ## Discussion
 
-This study highlights the potential of computer vision—particularly YOLO-based object detection models—for improving safety during emergency evacuations. While the results show promising detection accuracy for doors and fire, and functional estimation of distances and object sizes, several challenges and insights emerged throughout the research.
+This study highlights the potential of computer vision—particularly YOLO-based object detection models—for improving safety during emergency evacuations.
 
 ### Strengths and Contributions
 
 - **Real-time response**: The models performed inference in less than 0.3 seconds per frame, which is critical during fast-moving emergencies where seconds matter.
 - **Two complementary models**: One model focuses on hazardous anomalies (fire, smoke), while the other handles physical obstructions (tables, chairs, people). This two-model system mimics the logic of a human responder assessing both immediate danger and passability of escape routes.
-- **Visual reasoning with geometry**: By using the pinhole camera model, the system can estimate object sizes and distances using only one camera, eliminating the need for depth sensors or LiDAR in early prototypes.
+- **Visual reasoning with geometry**: By using the pinhole camera model, the system can estimate object sizes using only one camera, eliminating the need for depth sensors or LiDAR in early prototypes.
 - **Bounding box overlap logic**: We introduced a practical decision-making strategy that compares saved door bounding boxes (under normal conditions) with live detections to infer whether exits are blocked.
 
 ### Limitations and Technical Challenges
 
 - **Smoke detection challenges**: Smoke, unlike fire, is semi-transparent, highly variable, and influenced by lighting conditions. The model struggled to detect it reliably, especially in cases with thin or distant smoke. This issue was compounded by a smaller number of smoke images in the validation set.
-- **Single-camera geometry limits**: While the pinhole model provides an estimate of real-world size and distance, its accuracy depends on precise camera calibration (focal length). Any zoom changes or repositioning require recalibration, reducing robustness in real-world deployment.
 - **Inability to measure weight**: The system cannot determine whether a detected object is movable or not—an important consideration for evacuation. For example, a plastic chair may be easily pushed aside, while a heavy cabinet is not. This limitation could be addressed in future work by integrating physical sensors or learning from human movement around the object.
 - **Static annotations vs. dynamic environments**: While using saved "safe door" annotations is useful, it assumes consistent environmental layout. In dynamic or damaged environments (e.g., earthquakes), exit locations may shift or become physically inaccessible regardless of detected hazards.
 
@@ -333,11 +257,5 @@ Thank you Hamed Talibi, for your time and insightful contributions to the projec
 20. Egashira, T., Nishikawa, H., Kong, X., & Tomiyama, H. (2021). *Raspberry Pi Security Camera with Container-based Allocation*. ICEIC.
 
 21. Xu, S. S., & Shue, S. (2024). *YOLO Object Detection Performance on Edge Devices*. ISNCC. [DOI: 10.1109/ISNCC62547.2024.10759057](https://doi.org/10.1109/ISNCC62547.2024.10759057)
-
-22. Megalingam, R. K., et al. (2016). *Monocular Distance Estimation Using Pinhole Model*. ISCO. [DOI: 10.1109/ISCO.2016.7727017](https://doi.org/10.1109/ISCO.2016.7727017)
-
-23. Sadreddini, Z., Çavdar, T., & Jond, H. B. (2016). *Single Camera Distance Estimation for Indoor Environments*. TSP. [DOI: 10.1109/TSP.2016.7760921](https://doi.org/10.1109/TSP.2016.7760921)
-
-24. Saputra, D. E., et al. (2021). *Experiment on Distance Measurement Using Single Camera*. ICOIACT. [DOI: 10.1109/ICOIACT53268.2021.9564010](https://doi.org/10.1109/ICOIACT53268.2021.9564010)
 
 
